@@ -1,0 +1,36 @@
+.box {
+    -fx-spacing: 50;
+    -fx-background-color: #52656C;
+}
+
+.text {
+    -fx-text-fill: derive(#ffffff, 5%);
+}
+
+.root {
+    -fx-background-image: url("background.png");
+    -fx-background-size: cover;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F5F5F5;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 0, 1, 0, 0);
+}
+
+#welcome-text {
+    -fx-font-size: 40px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #F5F5F5;
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.7), 1, 0.0, 0, 2);
+}
+
+.button {
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#4682B4, #ADD8E6);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}

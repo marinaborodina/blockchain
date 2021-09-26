@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane stylesheets="/view/blockchain.css"
+            style=" -fx-border-color: black; -fx-border-width: 1; -fx-background-color: #1C3345; -fx-border-style: solid;"
+            xmlns:fx="http://javafx.com/fxml">
+    <center>
+        <ImageView preserveRatio="true" fitHeight="1200" fitWidth="800">
+            <image>
+                <Image
+                        url="/images/mining.gif"
+                        backgroundLoading="true"
+                />
+            </image>
+        </ImageView>
+    </center>
+</BorderPane>
+

@@ -1,0 +1,53 @@
+.root {
+    -fx-background-color: #F5F5F5;
+}
+
+.box {
+    -fx-spacing: 50;
+}
+
+.menu-bar {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Black";
+    -fx-font-weight: bold;
+}
+
+.menu-item {
+    -fx-background-color: #F0F8FF;
+}
+
+.menu:hover {
+    -fx-background-color: #F0F8FF;
+}
+
+.menu-bar .text {
+    -fx-font-size: 15px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #4682B4;
+}
+
+.menu-bar .label {
+    -fx-text-fill: #F0F8FF;
+}
+
+.menu-item:hover {
+    -fx-background-color: #D6EAF8;
+}
+
+.context-menu {
+    -fx-background-color: #F0F8FF;
+}
+
+.menu:showing {
+    -fx-background-color: #D6EAF8;
+}
+
+
+
+
+
+
+
+
+

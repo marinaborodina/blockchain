@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+
+
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import java.net.URL?>
+<?import javafx.scene.text.Font?>
+<BorderPane stylesheets="/view/blockchain.css"
+            fx:controller="controllers.BlockchainController"
+            xmlns:fx="http://javafx.com/fxml"
+            styleClass="root">
+
+    <top>
+        <MenuBar fx:id="menuBar">
+            <menus>
+                <Menu text="Transaction">
+                    <items>
+                        <MenuItem text="Add new Transaction" onAction="#newTransaction"/>
+                        <MenuItem text="Show Transaction List" onAction="#showTransactionList"/>
+                    </items>
+                </Menu>
+                <Menu text="Smart Contract">
+                    <items>
+                        <MenuItem text="Add new Smart Contract" onAction="#newSmartContract"/>
+                        <MenuItem text="Show Smart Contract List" onAction="#showSmartContractList"/>
+                    </items>
+                </Menu>
+                <Menu text="Mempool">
+                    <items>
+                        <MenuItem text="Show Mempool" onAction="#showMempool"/>
+                    </items>
+                </Menu>
+                <Menu text="Mining">
+                    <items>
+                        <MenuItem text="Start Mining" onAction="#mine"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+
+
+    <center>
+        <ScrollPane fitToWidth="true">
+
+            <FlowPane fx:id="blockFlow" alignment="top_left" hgap="10" vgap="10">
+
+                <StackPane alignment="TOP_LEFT">
+
+                    <ImageView fx:id="boximage" preserveRatio="true" fitWidth="150">
+                        <image>
+                            <Image
+                                    url="/images/block.gif"
+                                    backgroundLoading="true"
+                            />
+                        </image>
+                    </ImageView>
+                    <VBox>
+                        <padding>
+                            <Insets top="75" right="0" bottom="0" left="22"/>
+                        </padding>
+
+                        <Label fx:id="lblGenesisBlock" text="Genesis Block" style="-fx-text-fill: #4682B4">
+                            <font>
+                                <Font name="Verdana Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                    </VBox>
+
+                </StackPane>
+
+            </FlowPane>
+        </ScrollPane>
+    </center>
+
+    <stylesheets>
+        <URL value="@blockchain.css"/>
+    </stylesheets>
+</BorderPane>

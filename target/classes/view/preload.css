@@ -1,0 +1,10 @@
+.root {
+    -fx-background-color: #E6EAEE;
+}
+
+#welcome-text {
+    -fx-font-size: 50px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #344E5A;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 1, 0.0 , 0 , 2 );
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" styleClass="root">
+
+    <GridPane alignment="center">
+
+        <padding>
+            <Insets top="10" right="0" bottom="0" left="50"/>
+        </padding>
+        <ImageView preserveRatio="true" fitHeight="800" fitWidth="600">
+            <image>
+                <Image
+                        url="/images/preload.gif"
+                        backgroundLoading="true"
+                />
+            </image>
+        </ImageView>
+    </GridPane>
+
+
+    <Pane>
+        <Text id="welcome-text" layoutX="90" layoutY="90" text="Welcome"/>
+    </Pane>
+
+    <stylesheets>
+        <URL value="@preload.css"/>
+    </stylesheets>
+</AnchorPane>
